@@ -1,0 +1,160 @@
+nav {
+  width: 100%;
+}
+
+.topNav {
+  width: 100%;
+  height: 64px;
+  background-color: #090809;
+  border-bottom: #bc0f0f 1px solid;
+}
+
+.topNavItems {
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 150px;
+  height: 40px;
+  background-image: url(../images/dnd-logo.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.search {
+  width: 718px;
+  height: 100%;
+  /* background-color: #a5afba; */
+  border-right: #26282a 1px solid;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.searchbar {
+  margin-right: 100px;
+}
+
+.searchbar input {
+  margin-left: 30px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #a5afba;
+  background-color: #090809;
+  border: none;
+  outline: none;
+}
+
+.fa-icon {
+  color: #fff;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.signUp {
+  width: 320px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.signInBtn {
+  width: 45%;
+  height: 40px;
+  background-color: #090809;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  font-size: 12px;
+}
+
+.signUpBtn {
+  width: 41%;
+  height: 40px;
+  background-color: #bc0f0f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+.mobile-menu {
+  color: #a5afba;
+  font-size: 28px;
+  display: none;
+}
+
+.bottomNav {
+  width: 100%;
+  height: 50px;
+  background-color: #26282a;
+}
+
+.links {
+  max-width: 1220px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  /* background-color: #bc0f0f; */
+  margin: 0 auto;
+  font-size: 16px;
+}
+
+.links a {
+  text-decoration: none;
+  color: #a5afba;
+  margin: 0 15px;
+}
+
+.links a:hover {
+  color: whitesmoke;
+}
+
+@media only screen and (max-width: 980px) {
+  .topNav .topNavItems .nav-socials {
+    display: none;
+  }
+}
+@media only screen and (max-width: 930px) {
+  .bottomNav {
+    display: none;
+  }
+}
+@media only screen and (max-width: 890px) {
+  .topNav .topNavItems .signUp {
+    display: none;
+  }
+  .topNav .topNavItems .mobile-menu {
+    display: flex;
+    padding-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .topNav .topNavItems .search .searchbar .glass {
+    display: none;
+  }
+  .topNav .topNavItems .logo {
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .topNav .topNavItems .search {
+    display: none;
+  }
+  .topNav .topNavItems .logo {
+    margin-left: 0px;
+  }
+  .topNav .topNavItems .mobile-menu {
+    margin-left: 160px;
+    padding-right: 10px;
+  }
+}
